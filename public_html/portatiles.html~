@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+       <link rel="stylesheet" href="style.css" type="text/css"/>
+
+        <title>PCNow!</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css">
+            aside {
+               background-image:url(imagenes/ht5.png);
+               background-size:auto auto;
+               position: relative;
+               width: 200px;
+               display:block;
+            }
+            div.c11 {
+                width: 300px;
+                background-color: lightblue;
+                     }
+                     
+            body{
+                /*Color seccion azul claro*/
+                background-color: lightblue;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+            
+            footer{
+                 text-align: center;
+                 background-color: pink;
+            }
+            div.c1{
+               background-color: yellow;
+               color: blue;
+               text-align: center;
+               margin-left: 230px;
+               margin-right: 150px;
+            }
+            
+            #productoDestacado{
+                border: 5px red solid;
+                background-color: lime;
+                margin-left: 230px;
+                margin-right: 150px;
+                height: 370px;
+                width: 650px;
+            }
+            
+
+            table.productos{
+                margin-left: 250px;
+                margin-top: 20px;
+                margin-bottom: 10px;
+                
+            }
+            
+            ul.caracteristicasProductos{
+                font-style: italic;
+                font-weight: bold;
+                list-style: none;
+            }
+            
+            li.precio{
+                 background-color: orange;
+                 background-size: 15px auto;
+                 width: 65px;
+            }
+            
+        </style>
+    </head>
+    <body>
+       <header>
+        
+        <div id="cabecera">
+            <img src="imagenes/decsai.png" alt="imagen publicidad" width="1500" height="200">
+            <h1 style="text-align: center;font-size: 500%;color: blue"><a href="index.html">PCNOW!</a></h1>
+        </div>
+        
+          
+        <div class="c11">
+            <p><em>info de contacto</em></p>
+            <p>Correo <em><a href="http://www.pcnowcom">pcnow@info.com</a></em></p>
+            <form action="mailto:rafaellg8@correo.ugr.es?&amp;subject=Asunto" enctype="text/plain">Suscribirse: <input type="email" name="suscribir" value=""></form>
+        </div>
+            
+       </header>
+        <aside id="publicidadIzda" style="float: left; height: 2000px">
+            <br><br>
+            <br><br>
+        </aside>
+        
+        
+        <aside id="publicidadDcha" style="float: right; height: 2000px">
+           <br><br>
+        </aside>
+        
+        
+        <section id="secciones" style="text-align: center">
+            <ul style="background-color: red;font-size: xx-large;font-style: italic">
+                <li><a href="portatiles.html" style="color: background"><span>        Portatiles  </span></a>
+                <a href="sobremesa.html" style="color: background"><span>         Sobremesa          </span></a>
+                <a href="componentes.html" style="color: background"><span>       Componentes     </span></a>
+                <a href="electronica.html" style="color: background"><span>       Electronica     </span></a>
+               </li>
+            </ul>
+        </section>
+        
+        <div class="c1">
+            <h2 style="font-size: 550%">PORTATILES</h2>
+        </div>
+        
+        <div id="productoDestacado">
+            <h2 >HP Pavilion dv6</h2>
+            <figure style="float: left">
+            <img src="imagenes/paviliondv6.jpg" alt="producto1" height="250" title="paviliondv6">
+            <br>
+                <a href="http://www.hewletpackard.com">Especificaciones</a>
+            </figure>
+            <ul class="caracteristicasProductos">
+                <li><h3>Caracteristicas Generales</h3></li>
+                <li>Intel Core i5</li>
+                <li>RAM 4GB</li>
+                <li> 1 TB Disco Duro</li>
+            </ul>
+        </div>
+        
+        <table class="productos">
+            <br><br>
+            <caption></caption>
+            <thead>
+            </thead>
+            <tbody>
+                <tr>
+                   <td>
+                       <h2>HP Pavilion dv6</h2>
+                        <img src="imagenes/paviliondv6.jpg" alt="producto1" title="paviliondv6" height="200" >
+                        <ul style="float: right" class="caracteristicasProductos">
+                            <li>Intel core i3</li>
+                            <li>500 GB</li>
+                            <li>4 GB RAM</li>
+                            <li class="precio">329 &euro;</li>
+                        </ul>
+                        <a href="http://www.hp.com">Especificaciones</a>
+                   </td> 
+
+                   <td>
+                       <h2>Acer Aspire V3</h2>
+                       <img src="imagenes/acer_aspire_v3_572g_729a_i7_4510u_8gb_500gb_gt820m__15_6__210_210.jpg" alt="acer aspire v3"
+                            height="200" title="acerAspireV3">
+                       <ul style="float: right" class="caracteristicasProductos">
+                            <li>Intel core i7</li>
+                            <li>500 GB</li>
+                            <li>8 GB RAM</li>
+                            <li class="precio">700 &euro;</li>
+                        </ul>
+                        <a href="http://www.acer.com">Especificaciones</a><ul>
+                   </td>
+                   
+                   <td>
+                       <img src="imagenes/ht5.png" alt="ht5" style="width: 100px; height: 150px">
+                   </td>
+                </tr>
+                
+                <tr>
+                     <td>
+                       <h2>Lenovo B50</h2>
+                       <img src="imagenes/lenovo_b50_70_80eu_intel_core_i3_4005u_4gb_500gb_15_6__210_210.jpg" alt="lenovoB50" height="200">
+                        <ul style="float: right" class="caracteristicasProductos">
+                            <li>Intel core i3</li>
+                            <li>500 GB</li>
+                            <li>4 GB RAM</li>
+                            <li class="precio">399 &euro;</li>
+                        </ul>
+                        <br>
+                        <a href="http://www.lenovo.com">Especificaciones</a>
+                   </td> 
+
+                   <td>
+                       <h2>HP Pavilion</h2>
+                       <img src="imagenes/hp_15_r122ns_i5_4210u_4gb_500gb_gt820m_15_6__210_210.jpg" alt="hppavilion" height="200">
+                       <ul style="float: right" class="caracteristicasProductos">
+                            <li>Intel core i7</li>
+                            <li>500 GB</li>
+                            <li>4 GB RAM</li>
+                            <li class="precio">500 &euro;</li>
+                        </ul>
+                        <br>
+                        <a href="http://www.hp.com">Especificaciones</a><ul>
+                   </td>
+                   
+                   <td>
+                       <img src="imagenes/ht5.png" alt="ht5" style="width: 100px; height: 150px">
+                   </td>
+                </tr>
+            </tbody>
+        </table>
+        
+       
+
+		         
+        
+    </body>
+</html>

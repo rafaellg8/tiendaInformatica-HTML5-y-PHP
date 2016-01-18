@@ -1,0 +1,183 @@
+    <html>
+        <head>
+            <style type="text/css">
+
+                #iframeid{
+                    float: top;
+                }
+
+            </style>
+            <link rel="stylesheet" href="styleIndex.css" type="text/css"/>
+
+            <title>PCNow!-Alta de Nuevo Usuario</title>
+            <meta charset="UTF-8">
+
+            <!--
+            SCRIPT Javascript que muestra un mensaje de alerta ante campos vacíos y muestra una ventana
+            emergente
+            Aqui comprobamos antes que las 2 contraseñas son iguales, antes de mandarlas a la tabla
+           -->
+            <script>
+                function validateForm(){
+                    var x = document.forms["formularioRegistro"]["nickname"].value;
+                    var p1 = document.forms["formularioRegistro"]["pass1"].value;
+                    var p2 = document.forms["formularioRegistro"]["pass2"].value;
+
+
+                    if (x == null || x=="") {
+                        alert ("Nombre usuario debe no ser vacio");
+                    return false;
+                    }
+
+                    if (p1 == null || p1 == "" || p2 == null || p2 == "" ){
+                        alert("Introduzca la contraseña y su repeticion por favor");
+                        return false;
+                    }
+
+                    var cmp = p1.localeCompare(p2);
+                    
+                    //Comprobamos por ultimo las contraseñas antes de madarlas a la base de datos
+                    if (cmp != 0){
+                        alert("Contraseñas incorrectas ");
+                        return false;
+                    }
+
+
+                }
+                
+            
+            function funcionGoogle(){
+            window.open("formularioRegistro.html");
+            }
+        
+        
+        //Funcion que muestra el menu de secciones y clientes  
+            function mostrarSecciones(){
+            document.getElementById('secciones').style.display = 'block';
+            }
+            
+            //Funcion que muestra el menu de los usuarios
+            function mostrarMenuUsuario(){
+                document.getElementById('menu').style.display = 'block';
+            }
+            
+        
+            </script>
+
+        </head>
+        <body>
+            <header>
+
+                <!--Seccion de Cabecera principal-->
+                <section>
+                    <img src="imagenes/decsai.png" alt="imagen publicidad" height="190" width="1300">
+                    <h1 style="text-align: center;font-size: 50px"><a href="index.html">PCNOW!</a></h1>
+                    <h1 style="font-size: 30px;text-align: center">ALTA NUEVO USUARIO</h1>
+                </section>
+
+
+            </header>
+
+            <table border="1" id="secciones">
+                <thead>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="background-color: lavender">
+                            <a href="portatiles.html" >Portatiles</a>
+                        </td>
+                        <td style="background-color: lightblue">
+                            <a href="sobremesa.html">Sobremesa</a>
+                        </td>
+                        <td style="background-color: lightgreen">
+                            <a href="componentes.html" >Componentes</a>
+                        </td>
+                        <td style="background-color: #ff3333">
+                            <a href="electronica.html">Electronica</a>
+                        </td>
+
+                    </tr>
+
+                </tbody>
+            </table>
+
+
+
+            <!--publicidad lateral-->
+        <aside class="publiLateral" id="publicidadIzda" style="float: left">
+        </aside>
+
+
+        <aside class="publiLateral" id="publicidadDcha" style="float: right">
+        </aside>
+
+
+        <!--Seccion del Formulario-->
+        <!--Contenedor Principal Formulario-->
+        <section style="width: 860px; height: auto; margin-left: 250px; margin-right: 250px">
+            <form action="procesarRegistro.php" method="POST" name="formularioRegistro" style="background: orange" onsubmit="return validateForm()">
+                <h2>Formulario de Registro</h2>
+
+                <fieldset >
+                    <legend style="font-weight: bold">Datos Acceso </legend>
+                    <p>Nombre Usuario<input type="text" name="nickname" value="" size="50" ></p>
+                    <p>Contraseña<input type="password" name="pass1" value="" size="50" ></p>
+                    <p>Repita la contraseña <input type="password" name="pass2" value="" size="50" ></p>
+                </fieldset>
+
+                <fieldset >
+                    <legend style="font-weight:bold"> Datos Suscripción </legend>
+                    <p>nombre<input type="text" name="nombre" value="nombre" placeholder="nombre" size="50" ></p> 
+                    <p>apellido <input type="text" name="apellidos1" value="apellidos" placeholder="apellidos" size="50"></p> 
+                        <p>apellido<input type="text" name="apellidos2" value="apellidos" placeholder="apellidos"  size="50"></p>
+                    <p>fecha nacimiento<input type="date" name="fechaNacimiento" value="dd/mm/yy" placeholder="dd/mm/yy" min="1000-01-01" max="2015-01-01" required>
+                   
+                    <p>email<input type="email" name="email" value="" placeholder="correo" size="50" required></p>
+
+                    <br>
+                    <br>
+                    
+                </fieldset>
+
+                <input type = "submit" id = "button1" value = "ENVIAR"/>
+                <input type = "reset" id = "button2" value = "ELIMINAR" />
+
+
+
+
+
+            </form>
+
+        </section>
+
+
+
+
+
+
+        <footer  style="text-align: center; height: 50px; width: 400px; position: static;
+                 margin-left: 400px;
+                 margin-top: 20px;">
+
+            <p>Rafael Lachica Garrido</p>
+            <p>Contacto
+                <a href="mailto:pcnow!@email.com">
+                    pcnow!@email.com  
+                </a>
+            </p>
+            <address>Calle Periodista Daniel Saucedo Aranda s/n</address>
+        <p>Telefono : <strong>958 001 002</strong> </p>
+
+        <a href="pcnow_RafaelLachicaGarrido.pdf">Como se hizo</a>
+
+        <h3><a href="formulario.html"><input type="submit" value="SUSCRIBIRSE"/></a></h3>
+
+
+
+    </footer>   
+
+
+
+
+    </body>
+    </html>

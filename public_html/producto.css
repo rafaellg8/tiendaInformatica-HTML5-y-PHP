@@ -1,0 +1,231 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 30-mar-2015, 21:16:41
+    Author     : rafa
+*/
+
+.informeProducto{
+    float: left;
+    position: relative;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 600px;
+    height: 800px;
+    border:1px solid red;
+    border-color: lavender;
+    text-align: left;
+    font-family: fantasy;
+    overflow: scroll;
+}
+
+
+           #secciones{
+                background-color: orange;
+                font-size:  30px;
+                margin-left: 260px;
+                width: 840px;
+                border-collapse: separate;
+                border-spacing: 10px;
+                position: relative;
+                display: none;
+            }
+            /* Menu de la Tienda
+                incluye login y secciones
+            */
+            .menuPrincipalTienda{
+                background-color: orange;
+                position: relative;
+                width: 840px;
+                height: 30px;
+                margin-left: 260px;
+                border-spacing: 20px;
+                text-align: center;
+               
+            }
+
+
+            aside.publiLateral {
+               background-image: url(imagenes/ht5.png);
+               background-repeat: repeat-y;
+               background-attachment: inherit;
+               background-size: 200px 200px;
+               position: relative;
+               width: 250px;
+               height: 900px;
+            }
+            
+            body{
+                width: 1370px;
+            }      
+           
+            
+           
+            section.c1{
+               color: orange;
+               text-align: center;
+               margin-left: 230px;
+               margin-right: 230px;
+            }
+            
+           
+            
+          .productosIzda, .productosDcha {
+                float: left;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                width: 250px;
+                height: 400px;
+                overflow: scroll;
+                
+            }
+            
+             
+            section.publicidad{
+                float: right;
+                margin-left: 5px;
+                width: 250px;
+                height: auto;
+                border:1px solid;
+                border-color: lavender;
+                text-align: center;
+            }
+            
+            
+            article.productos{
+                float: left;
+                margin-left: 10px;
+                margin-bottom: 10px;
+                border:1px solid;
+                width: 230px;
+                border-color: lavender;
+                text-align: center;
+                font-family: fantasy;
+                
+                
+            }
+            
+           
+            
+           
+            
+            .precio{
+                 background-color: orange;
+                 background-size:10px 10px;
+                 width: 50px;
+                 position: static;
+                 border: activeborder 4px solid;
+                 text-shadow: 
+                  -1px -1px 0 white,
+                  1px -1px 0 white,
+                  -1px 1px 0 white,
+                  1px 1px 0 white;
+                  font-family: fantasy;
+                 
+            }
+            
+             ul.caracteristicasProductos{
+                text-align: left;
+                list-style: none;
+                font-size: 18px;
+            }
+            
+           a {
+                text-decoration: none;
+                color: black;
+                font-weight: bold;
+            }
+            
+            h3{
+                font-size: 20px;
+                text-shadow: 
+                  -1px -1px 0 white,
+                  1px -1px 0 white,
+                  -1px 1px 0 white,
+                  1px 1px 0 white;
+                color: black;
+                font-family:fantasy ;
+            }
+            
+            h2{
+                font-size: 30px;
+                text-shadow: 
+                  -1px -1px 0 white,
+                  1px -1px 0 white,
+                  -1px 1px 0 white,
+                  1px 1px 0 white;
+                color: black;
+                font-family:fantasy ;
+            }
+            
+            h4.oferta{
+              border-radius: 190px 190px 190px 190px;
+              -moz-border-radius: 190px 190px 190px 190px;
+              -webkit-border-radius: 190px 190px 190px 190px;
+              border: 2px dashed gold;
+              background-color: yellow;
+              position: relative;
+              font-size: 34px;
+            }
+            
+            p{
+                text-align: left;
+            }
+            
+            section.comentariosClientes{
+                float: left;
+                margin-top: 20px;
+                margin-left: 10px;
+                margin-bottom: 10px;        
+                height: auto;
+                width: 600px;       
+                border:1px solid;
+                border-color: lavender;
+                text-align: center;
+                background-color: darkorange;
+                
+                
+            }
+            
+            article.comentario{
+                float: left;
+                background-color: orange;
+                margin-top: 10px;
+                margin-left: 10px;
+                margin-bottom: 5px;
+                width: 580px;
+                height: 350px;
+                text-align: left;
+                overflow: scroll;
+                border: solid 3px;
+            }
+            
+        .ec-stars-wrapper {
+	font-size: 0;
+	display: inline-block;
+        }
+        
+ /*PUNTUACION*/
+.ec-stars-wrapper a {
+	text-decoration: none;
+	display: inline-block;
+	/* Volver a dar tamaño al texto */
+	font-size: 22px;
+	
+	
+	color: #888;
+}
+
+.ec-stars-wrapper:hover a {
+	color: rgb(39, 130, 228);
+}
+/*
+ * El selector de hijo, es necesario para aumentar la especifidad
+ */
+.ec-stars-wrapper > a:hover ~ a {
+	color: #888;
+}

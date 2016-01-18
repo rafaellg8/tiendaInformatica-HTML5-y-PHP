@@ -1,0 +1,164 @@
+    <!DOCTYPE html>
+    <html>
+    	
+        <head>
+            <style type="text/css">
+
+                #iframeid{
+                    float: top;
+                }
+
+            </style>
+            <link rel="stylesheet" href="styleIndex.css" type="text/css"/>
+
+            <title>PCNow!-Registro Correcto - Redireccinando a Inicio .....</title>
+            <meta charset="UTF-8">
+            
+            <!--Redireccinar a la pagina de inicio despues de 1"-->
+           <META HTTP-EQUIV="REFRESH" CONTENT="3;URL=index.html">
+            </META> 
+            
+        <script type="text/javascript">
+            function funcionGoogle(){
+            window.open("formularioRegistro.html");
+            }
+        
+        
+        //Funcion que muestra el menu de secciones y clientes  
+            function mostrarSecciones(){
+            document.getElementById('secciones').style.display = 'block';
+            }
+            
+            //Funcion que muestra el menu de los usuarios
+            function mostrarMenuUsuario(){
+                document.getElementById('menu').style.display = 'block';
+            }
+        </script>
+        
+
+        </head>
+        
+        <body>
+            <header>
+
+                <!--Seccion de Cabecera principal-->
+                <section>
+                    <img src="imagenes/decsai.png" alt="imagen publicidad" height="190" width="1300">
+                    <h1 style="text-align: center;font-size: 50px"><a href="index.html">PCNOW!</a></h1>
+                    
+                </section>
+
+
+            </header>
+
+             <table class="menuPrincipalTienda">
+        <tbody>
+            <tr>
+                <th>
+                   <a href="#idSecciones" onclick="mostrarSecciones()">
+                    Secciones
+                    </a>
+                </th>
+                
+                <th>
+                   <a href="#menu" onclick="mostrarMenuUsuario()">
+                    Usuarios
+                    </a>
+                </th>
+                
+                <th>
+                   <a href="formularioRegistro.html">
+                    Suscribirse
+                    </a>
+                </th>
+            </tr>
+            
+            <tr id="menu" style="display: none; text-align: center">
+                    <th>
+                        <a href="inicioSesion.html">
+                         Inicio Sesion 
+                        </a>
+                    </th>
+                    
+                    <th>
+                       <a href="formularioRegistro.html">  REGISTRATE!</a>
+                    </th>
+                </tr>
+        </tbody>
+    </table>
+       
+        
+    <table id="secciones" summary="seccionesTienda">
+                <thead>
+                  </thead>
+                <tbody>
+                    <tr>
+                        <td style="background-color: lavender">
+                            <a href="portatiles.html" >Portatiles</a>
+                        </td>
+                        <td style="background-color: lightblue">
+                             <a href="sobremesa.html">Sobremesa</a>
+                        </td>
+                        <td style="background-color: lightgreen">
+                             <a href="componentes.html" >Componentes</a>
+                        </td>
+                        <td style="background-color: #ff3333">
+                             <a href="electronica.html">Electronica</a>
+                        </td>
+                       
+                    </tr>
+                    
+                </tbody>
+            </table>
+
+
+
+            <!--publicidad lateral-->
+        <aside class="publiLateral" id="publicidadIzda" style="float: left">
+        </aside>
+
+
+        <aside class="publiLateral" id="publicidadDcha" style="float: right">
+        </aside>
+
+
+        <!--Seccion del Formulario-->
+        <!--Contenedor Principal Formulario-->
+        <section style="width: 860px; height: 200px; margin-left: 250px; margin-right: 250px;">
+            <h2 >REGISTRO CORRECTO !!!</h2>
+
+            <h4> Redireccionando a la página de inicio en breve </h4>
+
+            
+            <img id="cargando" src="imagenes/cargando.gif" alt="cargandoImagen" style="margin-left: 200px;">
+
+        </section>
+
+
+
+
+
+
+        <footer  style="text-align: center; height: 50px; width: 400px; position: static;
+                 margin-left: 400px;
+                 margin-top: 250px;">
+
+            <p>Rafael Lachica Garrido</p>
+            <p>Contacto
+                <a href="mailto:pcnow!@email.com">
+                    pcnow!@email.com  
+                </a>
+            </p>
+            <address>Calle Periodista Daniel Saucedo Aranda s/n</address>
+        <p>Telefono : <strong>958 001 002</strong> </p>
+
+        <a href="pcnow_RafaelLachicaGarrido.pdf">Como se hizo</a>
+
+        <h3><a href="formulario.html"><input type="submit" value="SUSCRIBIRSE"/></a></h3>
+
+
+
+    </footer>   
+
+    </body>
+    </html>

@@ -1,0 +1,198 @@
+
+            #secciones{
+                background-color: orange;
+                font-size:  30px;
+                margin-left: 260px;
+                width: 840px;
+                border-collapse: separate;
+                border-spacing: 10px;
+                position: relative;
+                display: none;
+            }
+            
+            /* Menu de la Tienda
+                incluye login y secciones
+            */
+            .menuPrincipalTienda{
+                background-color: orange;
+                position: relative;
+                width: 840px;
+                height: 30px;
+                margin-left: 260px;
+                border-spacing: 20px;
+                text-align: center;
+               
+            }
+
+
+             body{
+                margin-left: 5px;
+                margin-right: 5px;
+                margin-bottom: 5px;
+                margin-top: 5px;
+                background-color: white;
+                width: 1370px;
+                //border: solid 1px red;
+                height: auto;
+            }      
+            
+            aside.publiLateral {
+               background-image: url(imagenes/ugranuncio.jpeg);
+               background-repeat: repeat-y;
+               background-attachment: inherit;
+               background-size: 200px 200px;
+               position: relative;
+               width: 250px;
+               height: 900px;
+               margin-top: 20px;
+            }
+            
+            
+          .productosIzda {
+                float: left;
+                margin-top: 25px;
+                margin-bottom: 10px;
+                width: 250px;
+                height: auto;
+               // border: solid red 1px;
+            }
+            
+            .productosDcha {
+                float: left;
+                margin-top: 25px;
+                margin-bottom: 10px;
+                width: 250px;
+                height: auto;
+            }
+            
+            .anunciosDcha{
+                float: left;
+                margin-top: 25px;
+                margin-bottom: 10px;
+                width: 350px;
+                height: auto;
+               // border: solid red 1px;
+            }
+            
+             
+            section.publicidad{
+                float: left;
+                margin-top: 20px;
+                margin-left: 10px;
+                margin-bottom: 10px;
+                width: 333px;
+                height: auto;
+                border:1px solid;
+                border-color: black;
+                text-align: center;
+            }
+            
+            article.noticias{
+                float: left;
+                margin-top: 10px;
+                margin-left: 10px;
+                margin-bottom: 10px;
+                width: 333px;
+                height: auto;
+                border:1px solid;
+                border-color: black;
+                text-align: center;
+            }
+            
+            
+            
+            article.productos{
+                float: left;
+                margin-left: 10px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                width: 230px;
+                height: 400px;
+                border:1px solid;
+                border-color: black;
+                text-align: center;
+                font-family: fantasy;
+            }
+            
+            article.productos2{
+                float: left;
+                margin-left: 10px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                width: 230px;
+                height: 400px;
+                border:1px solid;
+                border-color: black;
+                text-align: center;
+                font-family: fantasy;
+            }
+            
+           
+            
+            .precio{
+                 background-color: orange;
+                 background-size:10px 10px;
+                 width: 50px;
+                 position: absolute;
+                 border: activeborder 4px solid;
+                 text-shadow: 
+                  -1px -1px 0 white,
+                  1px -1px 0 white,
+                  -1px 1px 0 white,
+                  1px 1px 0 white;
+                  font-family: fantasy;
+                 
+            }
+            
+             ul.caracteristicasProductos{
+                text-align: left;
+                font-weight: bold;
+                list-style: none;
+                
+              
+            }
+            
+            a {
+                text-decoration: none;
+                color: black;
+                font-weight: bold;
+            }
+            
+            h3{
+                font-size: 20px;
+                text-shadow: 
+                  -1px -1px 0 white,
+                  1px -1px 0 white,
+                  -1px 1px 0 white,
+                  1px 1px 0 white;
+                color: black;
+                font-family: fantasy ;
+            }
+            
+            h2{
+                font-size: 30px;
+                text-shadow: 
+                  -1px -1px 0 white,
+                  1px -1px 0 white,
+                  -1px 1px 0 white,
+                  1px 1px 0 white;
+                color: black;
+                font-family:fantasy ;
+            }
+            
+            h4.oferta{
+              border-radius: 190px 190px 190px 190px;
+              -moz-border-radius: 190px 190px 190px 190px;
+              -webkit-border-radius: 190px 190px 190px 190px;
+              border: 2px dashed gold;
+              background-color: yellow;
+              position: relative;
+              font-size: 34px;
+            }
+
+            botonSesion{
+               background-color: orange;
+              background-size:10px 10px;
+                 width: 60px;
+                 position: relative;
+            }
